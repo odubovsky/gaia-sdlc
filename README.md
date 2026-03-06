@@ -10,6 +10,16 @@ The framework enables organizations to leverage modern AI-enabled development en
 
 ---
 
+## Model Description
+
+GAIA (Governed AI Agents) is a framework for structuring AI-assisted software development around **human-orchestrated AI agents operating under engineering guardrails**.
+
+The model introduces a governed Software Development Lifecycle (SDLC) where AI agents operate in defined engineering roles and collaborate through explicit artifacts rather than shared conversational context.
+
+GAIA enables organizations to integrate AI into engineering workflows while preserving the structure, traceability, and accountability expected in professional software development environments.
+
+---
+
 ## Core Concepts
 
 GAIA structures AI-assisted development around:
