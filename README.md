@@ -66,6 +66,7 @@ GAIA (Governed AI Agents) was developed by **Oded Dubovsky** as part of the **ST
 
 ## License
 
-This framework and documentation are released under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+This framework and documentation are released under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
 
+Commercial use requires explicit permission.
 See the LICENSE file for details.
