@@ -1,10 +1,12 @@
 # GAIA — Governed AI Agents SDLC
 
+## Framework Overview
+
 GAIA (Governed AI Agents) is a framework for structuring AI-assisted software development around **human-orchestrated AI agents operating under engineering guardrails**.
 
-The model introduces a governed Software Development Lifecycle (SDLC) where AI agents operate in defined engineering roles and collaborate through explicit artifacts rather than shared conversational context.
+Instead of relying on conversational prompts as the primary workflow mechanism, GAIA organizes AI participation through **role-based agents, explicit commands, and artifact-driven progression across the software development lifecycle**.
 
-GAIA enables organizations to integrate AI into engineering workflows while preserving the structure, traceability, and accountability expected in professional software development environments.
+The framework enables organizations to leverage modern AI-enabled development environments (such as Cursor, VS Code, Windsurf, and similar platforms) while preserving engineering discipline, traceability, and governance.
 
 ---
 
