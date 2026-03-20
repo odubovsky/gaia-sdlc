@@ -1,0 +1,166 @@
+{
+  "_readme": "design-system.json — קובץ tokens בסיסי שרוני מתאימה לכל פרויקט. היא מחליפה את הערכים לפי ה-brand של הלקוח ומייצאת גרסה ייחודית לכל פרויקט.",
+
+  "_instructions": "בתחילת כל פרויקט: (1) שאל לקוח על צבעי brand ופונטים. (2) עדכן את הסקשן 'brand' בהתאם. (3) שאר הערכים (spacing, animation, shadows) נשארים כברירת מחדל אלא אם הלקוח ביקש אחרת.",
+
+  "brand": {
+    "_note": "להחליף בצבעי הלקוח בכל פרויקט",
+    "primary": "#1E3A8A",
+    "secondary": "#7C3AED",
+    "accent": "#06B6D4",
+    "highlight": "#EC4899",
+    "warm": "#FBBF24",
+    "primary_text": "#0F172A",
+    "secondary_text": "#475569",
+    "background": "#FFFFFF",
+    "surface": "#F8FAFC"
+  },
+
+  "gradients": {
+    "hero": "linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%)",
+    "accent": "linear-gradient(90deg, var(--accent) 0%, var(--highlight) 100%)",
+    "dark": "linear-gradient(180deg, #0F172A 0%, #1E293B 100%)",
+    "glass": "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)",
+    "subtle": "linear-gradient(180deg, var(--background) 0%, var(--surface) 100%)"
+  },
+
+  "typography": {
+    "font_display": {
+      "_note": "פונט לכותרות — לבחור בהתאם לאישיות המותג",
+      "options": {
+        "modern_bold": "Clash Display",
+        "elegant": "Cormorant Garamond",
+        "friendly": "Plus Jakarta Sans",
+        "technical": "Space Grotesk",
+        "hebrew_strong": "Heebo",
+        "hebrew_elegant": "Frank Ruhl Libre"
+      },
+      "default": "Heebo",
+      "google_fonts_url": "https://fonts.google.com"
+    },
+    "font_body": {
+      "default": "Heebo",
+      "weight_regular": 400,
+      "weight_medium": 500,
+      "weight_bold": 700
+    },
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "3.75rem",
+      "hero": "clamp(2.5rem, 6vw, 5rem)"
+    },
+    "line_height": {
+      "tight": 1.2,
+      "normal": 1.6,
+      "relaxed": 1.8
+    }
+  },
+
+  "spacing": {
+    "section_padding_y": "clamp(4rem, 8vw, 8rem)",
+    "section_padding_x": "clamp(1.5rem, 5vw, 6rem)",
+    "container_max": "1280px",
+    "content_max": "800px",
+    "gap_sm": "1rem",
+    "gap_md": "2rem",
+    "gap_lg": "4rem",
+    "gap_xl": "6rem"
+  },
+
+  "border_radius": {
+    "sm": "0.5rem",
+    "md": "1rem",
+    "lg": "1.5rem",
+    "xl": "2rem",
+    "pill": "100px",
+    "circle": "50%"
+  },
+
+  "shadows": {
+    "sm": "0 2px 8px rgba(0,0,0,0.08)",
+    "md": "0 8px 24px rgba(0,0,0,0.12)",
+    "lg": "0 20px 48px rgba(0,0,0,0.16)",
+    "xl": "0 32px 64px rgba(0,0,0,0.20)",
+    "glow_primary": "0 0 40px rgba(124, 58, 237, 0.3)",
+    "glow_accent": "0 0 40px rgba(6, 182, 212, 0.3)",
+    "card_hover": "0 24px 48px rgba(0,0,0,0.18), 0 0 0 1px rgba(255,255,255,0.1)"
+  },
+
+  "glassmorphism": {
+    "light": {
+      "background": "rgba(255, 255, 255, 0.1)",
+      "backdrop_filter": "blur(12px)",
+      "border": "1px solid rgba(255, 255, 255, 0.2)",
+      "shadow": "0 8px 32px rgba(0, 0, 0, 0.12)"
+    },
+    "dark": {
+      "background": "rgba(0, 0, 0, 0.2)",
+      "backdrop_filter": "blur(16px)",
+      "border": "1px solid rgba(255, 255, 255, 0.08)",
+      "shadow": "0 8px 32px rgba(0, 0, 0, 0.3)"
+    },
+    "colored": {
+      "background": "rgba(124, 58, 237, 0.15)",
+      "backdrop_filter": "blur(12px)",
+      "border": "1px solid rgba(124, 58, 237, 0.2)",
+      "shadow": "0 8px 32px rgba(124, 58, 237, 0.15)"
+    }
+  },
+
+  "breakpoints": {
+    "mobile": "375px",
+    "tablet": "768px",
+    "desktop": "1024px",
+    "wide": "1280px",
+    "ultrawide": "1536px"
+  },
+
+  "z_index": {
+    "base": 0,
+    "card": 10,
+    "dropdown": 100,
+    "sticky": 200,
+    "modal_backdrop": 300,
+    "modal": 400,
+    "floating_popup": 500,
+    "cursor_follower": 9999,
+    "progress_bar": 9998
+  },
+
+  "component_defaults": {
+    "button_primary": {
+      "padding": "0.875rem 2rem",
+      "border_radius": "100px",
+      "font_weight": 600,
+      "transition": "all 0.3s ease",
+      "hover_scale": 1.03,
+      "hover_shadow": "glow_primary"
+    },
+    "card": {
+      "padding": "2rem",
+      "border_radius": "1.5rem",
+      "shadow": "md",
+      "hover_shadow": "card_hover",
+      "hover_transform": "translateY(-4px)",
+      "transition": "all 0.3s ease"
+    },
+    "section_divider": {
+      "type": "wave",
+      "options": ["wave", "diagonal", "curve", "none"]
+    }
+  },
+
+  "motion_preferences": {
+    "_note": "תמיד לכבד prefers-reduced-motion",
+    "reduced_motion_fallback": "opacity transitions only, no transforms",
+    "css_rule": "@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; } }"
+  }
+}

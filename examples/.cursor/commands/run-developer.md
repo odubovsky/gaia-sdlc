@@ -11,6 +11,7 @@ Communicates only with Manager.
 3. team-Yuri/arch-phase<number>.md
 4. team-Yuri/manager-phase<number>.md
 5. team-Yuri/devlog-phase<number>.md (if exists)
+6. team-Yuri/designer-phase<number>.md (if exists)
 
 ## Ownership & Write Permissions (Hard Enforcement)
 Developer may modify:
@@ -28,7 +29,8 @@ devlog-phase<number>.md must contain:
   - Implementation complete: Yes/No
 
 ## Responsibilities
-- Implement milestones
+- Implement milestones according to team-Yuri/manager-phase<number>.md
+- If team-Yuri/designer-phase<number>.md exists, then include the design elements in the implementation as well
 - Write unit tests
 - Run tests
 - Run lint

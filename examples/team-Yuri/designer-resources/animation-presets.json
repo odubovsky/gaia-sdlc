@@ -1,0 +1,192 @@
+{
+  "_readme": "animation-presets.json — רוני משתמשת בקובץ זה כשכותבת designplan.md. כל preset מוכן להעתקה ישירה לספציפיקציות.",
+
+  "easing": {
+    "smooth": "power2.out",
+    "bouncy": "back.out(1.7)",
+    "snappy": "expo.out",
+    "gentle": "sine.inOut",
+    "dramatic": "power4.out"
+  },
+
+  "duration": {
+    "instant": 0.15,
+    "fast": 0.3,
+    "normal": 0.6,
+    "slow": 1.0,
+    "cinematic": 1.8
+  },
+
+  "stagger": {
+    "tight": 0.08,
+    "normal": 0.15,
+    "loose": 0.25,
+    "dramatic": 0.4
+  },
+
+  "presets": {
+
+    "fade_up": {
+      "description": "אלמנט עולה ונחשף — הנפוץ ביותר",
+      "from": { "y": 40, "opacity": 0 },
+      "to": { "y": 0, "opacity": 1 },
+      "duration": 0.7,
+      "ease": "power2.out",
+      "use_for": ["cards", "headings", "paragraphs", "images"]
+    },
+
+    "fade_in": {
+      "description": "נחשף בלי תנועה — לאלמנטים גדולים",
+      "from": { "opacity": 0 },
+      "to": { "opacity": 1 },
+      "duration": 0.8,
+      "ease": "sine.inOut",
+      "use_for": ["hero background", "full-width sections", "overlays"]
+    },
+
+    "slide_in_right": {
+      "description": "נכנס מהצד הימני",
+      "from": { "x": 60, "opacity": 0 },
+      "to": { "x": 0, "opacity": 1 },
+      "duration": 0.6,
+      "ease": "power2.out",
+      "use_for": ["sidebar content", "floating elements", "notifications"]
+    },
+
+    "scale_up": {
+      "description": "גדל ונחשף — לאלמנטים בודדים חשובים",
+      "from": { "scale": 0.85, "opacity": 0 },
+      "to": { "scale": 1, "opacity": 1 },
+      "duration": 0.5,
+      "ease": "back.out(1.7)",
+      "use_for": ["CTA buttons", "icons", "badges", "highlights"]
+    },
+
+    "text_reveal": {
+      "description": "טקסט נחשף עם clip-path — דרמטי",
+      "from": { "clipPath": "inset(0 100% 0 0)" },
+      "to": { "clipPath": "inset(0 0% 0 0)" },
+      "duration": 0.8,
+      "ease": "power3.out",
+      "use_for": ["hero headline", "section titles", "key messages"]
+    },
+
+    "stagger_list": {
+      "description": "רשימת אלמנטים נכנסים אחד-אחד",
+      "from": { "y": 30, "opacity": 0 },
+      "to": { "y": 0, "opacity": 1 },
+      "duration": 0.5,
+      "ease": "power2.out",
+      "stagger": 0.12,
+      "use_for": ["feature lists", "team cards", "testimonials", "process steps"]
+    },
+
+    "number_count": {
+      "description": "מספר רץ מ-0 לערך הסופי",
+      "duration": 2.0,
+      "ease": "power2.out",
+      "trigger": "onEnterViewport",
+      "fire_once": true,
+      "use_for": ["stats", "achievements", "ROI numbers"]
+    },
+
+    "parallax_slow": {
+      "description": "שכבה זוחלת לאט — אחורה ביותר",
+      "speed_multiplier": 0.3,
+      "use_for": ["background images", "decorative shapes", "blobs"]
+    },
+
+    "parallax_medium": {
+      "description": "שכבה אמצעית",
+      "speed_multiplier": 0.6,
+      "use_for": ["mid-ground elements", "floating cards"]
+    },
+
+    "parallax_fast": {
+      "description": "שכבה קדמית — זוחלת הכי מהיר",
+      "speed_multiplier": 1.0,
+      "use_for": ["foreground text", "floating badges", "icons"]
+    },
+
+    "magnetic_pull": {
+      "description": "כפתור נמשך לסמן",
+      "activation_radius": 100,
+      "pull_strength": 0.4,
+      "return_duration": 0.3,
+      "return_ease": "elastic.out(1, 0.3)",
+      "use_for": ["primary CTA button only"]
+    },
+
+    "cursor_follow": {
+      "description": "עיגול שעוקב אחרי הסמן",
+      "size_default": 20,
+      "size_hover": 60,
+      "lag": 0.1,
+      "opacity": 0.3,
+      "blend_mode": "difference",
+      "use_for": ["portfolio sites", "brand sites", "WOW bundle"]
+    },
+
+    "floating_popup_entrance": {
+      "description": "הודעה קופצת נכנסת",
+      "from": { "y": 20, "opacity": 0 },
+      "to": { "y": 0, "opacity": 1 },
+      "duration": 0.4,
+      "ease": "power2.out",
+      "delay_seconds": 35,
+      "auto_dismiss_seconds": 8
+    },
+
+    "hotspot_ripple": {
+      "description": "גלי pulse סביב נקודה חמה",
+      "keyframes": [
+        { "scale": 1, "opacity": 0.7 },
+        { "scale": 2.5, "opacity": 0 }
+      ],
+      "duration": 1.8,
+      "repeat": -1,
+      "waves": 3,
+      "wave_delay": 0.6,
+      "use_for": ["product hotspots", "map pins", "feature callouts"]
+    },
+
+    "page_load_sequence": {
+      "description": "סדר כניסת אלמנטים בטעינת הדף",
+      "sequence": [
+        { "element": "nav", "delay": 0, "preset": "fade_in" },
+        { "element": "hero_headline", "delay": 0.2, "preset": "text_reveal" },
+        { "element": "hero_subtitle", "delay": 0.6, "preset": "fade_up" },
+        { "element": "hero_cta", "delay": 0.9, "preset": "scale_up" },
+        { "element": "hero_image", "delay": 0.3, "preset": "fade_in" }
+      ]
+    }
+  },
+
+  "scroll_triggers": {
+    "default": {
+      "start": "top 80%",
+      "end": "top 20%",
+      "toggleActions": "play none none none"
+    },
+    "pin_section": {
+      "start": "top top",
+      "end": "+=500",
+      "pin": true,
+      "scrub": 1
+    },
+    "scrub_animation": {
+      "start": "top center",
+      "end": "bottom center",
+      "scrub": true
+    }
+  },
+
+  "interaction_timing": {
+    "hover_response": "0.2s",
+    "click_response": "0.15s",
+    "page_load_first_animation": "0.2s after DOMContentLoaded",
+    "floating_popup_delay": "35s",
+    "social_proof_interval": "45s",
+    "typing_indicator_duration": "0.8s"
+  }
+}
